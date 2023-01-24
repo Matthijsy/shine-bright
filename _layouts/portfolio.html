@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="site-section" data-aos="fade">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="row mb-5">
+                    <div class="col-12 ">
+                        <h2 class="site-section-heading text-center">{{ page.header_text }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 mb-4">
+                {% for image in page.images_1 %}
+                <img
+                        src="{{page.image_base}}{{image.img}}"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="{{image.alt}}"
+                />
+                {% endfor %}
+            </div>
+            <div class="col-4 mb-4">
+                {% for image in page.images_2 %}
+                <img
+                        src="{{page.image_base}}{{image.img}}"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="{{image.alt}}"
+                />
+                {% endfor %}
+            </div>
+            <div class="col-4 mb-4">
+                {% for image in page.images_3 %}
+                <img
+                        src="{{page.image_base}}{{image.img}}"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="{{image.alt}}"
+                />
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
