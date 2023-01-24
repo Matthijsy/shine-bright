@@ -1,0 +1,10 @@
+title: Shine Bright
+permalink: pretty
+
+# Set default layout
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

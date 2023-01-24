@@ -1,0 +1,76 @@
+---
+layout: default
+---
+{% if page.header_img %}
+<div class="container-fluid p-0">
+    <div class="justify-content-center">
+        <div><img class="img-fluid rounded" src="{{page.header_img}}" alt="..."/>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-9 mx-auto">
+            <div class="cta-white text-center rounded">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3 Small images with link to portfolio -->
+<div class="container justify-content-center">
+    <div class="row mb-5">
+        {% for img in page.overview_images %}
+        <div class="col-md-4">
+            <img src="{{img}}"
+                 style="max-width:100%; padding-top: 20px">
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="mx-auto">
+            <a class="btn btn-primary btn-xl" href="portfolio">
+                Portofolio
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Review -->
+{% if page.review_text %}
+<div class="container">
+    <div class="row justify-content-center" style="padding-top:20px; padding-bottom:20px">
+        <div class="col-md-6" style="padding-bottom:10px">
+            <img src="{{page.review_img}}"
+                 alt="Persoonlijke christelijke bruidsfotograaf" style="max-width:150%;height:auto">
+        </div>
+        <div class="col-md-6 ml-auto" style="padding-top:50px">
+            <h3>{{page.review_title}}</h3>
+            <p>
+                {{page.review_text}}
+            </p>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Call to Action -->
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="mid">
+            <img class="mid-img img-fluid mb-3 mb-lg-0 rounded" src="{{page.call_to_action_img}}" alt="..."/>
+            <div class="mid-text right-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Tarieven</span>
+                </h2>
+                <p class="mb-3" style="padding-bottom:50px">
+                    {{page.call_to_action_text}}
+                </p>
+                <div class="mid-button mx-auto"><a class="btn btn-primary btn-xl" href="/contact">Contact</a></div>
+            </div>
+        </div>
+    </div>
+</section>
