@@ -1,10 +1,45 @@
 title: Shine Bright
 permalink: pretty
+url: https://matthijsy.github.com/shine-bright
 
 # Set default layout
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
+
+
+# Footer load scripts
+footer_scripts:
+  - /js/jquery-3.3.1.min.js
+  - /js/jquery-migrate-3.0.1.min.js
+  - /js/jquery-ui.js
+  - /js/popper.min.js
+  - /js/bootstrap.min.js
+  - /js/owl.carousel.min.js
+  - /js/jquery.stellar.min.js
+  - /js/jquery.countdown.min.js
+  - /js/jquery.magnific-popup.min.js
+  - /js/bootstrap-datepicker.min.js
+  - /js/swiper.min.js
+  - /js/aos.js
+  - /js/picturefill.min.js
+  - /js/lightgallery-all.min.js
+  - /js/jquery.mousewheel.min.js
+  - /js/main.js
+
+# Header Stylesheet
+header_stylesheets:
+  - /fonts/icomoon/style.css
+  - /css/bootstrap.min.css
+  - /css/magnific-popup.css
+  - /css/jquery-ui.css
+  - /css/owl.carousel.min.css
+  - /css/owl.theme.default.min.css
+  - /css/lightgallery.min.css
+  - /css/bootstrap-datepicker.css
+  - /fonts/flaticon/font/flaticon.css
+  - /css/swiper.css
+  - /css/aos.css
+  - /css/style.css
