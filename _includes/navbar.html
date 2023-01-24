@@ -16,12 +16,12 @@
                     <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
                         <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                            <li {% if page.url == '/' %}class="active" {% endif %}><a href="/">Home</a></li>
-                            <li {% if page.url == '/about/' %}class="active" {% endif %}><a href="/about">Over mij</a></li>
-                            <li {% if page.url == '/bruiloften/' %}class="active" {% endif %}><a href="/bruiloften">Bruiloften</a></li>
-                            <li {% if page.url == '/familie/' %}class="active" {% endif %}><a href="/familie">Familie</a></li>
-                            <li {% if page.url == '/newborn/' %}class="active" {% endif %}><a href="/newborn">Baby/Zwanger</a></li>
-                            <li {% if page.url == '/contact/' %}class="active" {% endif %}><a href="/contact">Contact</a></li>
+                            <li {% if page.url == '/' %}class="active" {% endif %}><a href="{{'/' | | absolute_url}}">Home</a></li>
+                            <li {% if page.url == '/about/' %}class="active" {% endif %}><a href="{{'/about' | | absolute_url}}">Over mij</a></li>
+                            <li {% if page.url == '/bruiloften/' %}class="active" {% endif %}><a href="{{'/bruiloften' | | absolute_url}}">Bruiloften</a></li>
+                            <li {% if page.url == '/familie/' %}class="active" {% endif %}><a href="{{'/familie' | | absolute_url}}">Familie</a></li>
+                            <li {% if page.url == '/newborn/' %}class="active" {% endif %}><a href="{{'/newborn' | | absolute_url}}">Baby/Zwanger</a></li>
+                            <li {% if page.url == '/contact/' %}class="active" {% endif %}><a href="{{'/contact' | | absolute_url}}">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
