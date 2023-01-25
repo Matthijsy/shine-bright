@@ -1733,6 +1733,10 @@ a {
     font-weight: 100;
 }
 
+.bg-faded-secondary {
+    background-color: #F9EBE7;
+}
+
 .bg-faded {
     background-color: #9CAB9F;
 }
@@ -1816,11 +1820,9 @@ a {
         bottom: 1rem;
     }
 
-}
-
-@media (min-width: 1200px) {
-    .mid .mid-text {
-        /*     width: 45%; */
+    .overlap-right {
+        position: relative;
+        left:15%;
+        z-index: 1
     }
 }
-
