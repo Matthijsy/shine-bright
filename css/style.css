@@ -1826,3 +1826,15 @@ a {
         z-index: 1
     }
 }
+
+/* Always Push Footer to bottom*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
