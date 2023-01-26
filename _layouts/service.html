@@ -22,18 +22,17 @@ layout: default
 
 <!-- 3 Small images with link to portfolio -->
 <div class="container justify-content-center">
-    <div class="row mb-5">
+    <div class="row mb-3">
         {% for img in page.overview_images %}
-        <div class="col-md-4">
-            <img src="{{img | absolute_url}}"
-                 style="max-width:100%; padding-top: 20px">
+        <div class="col-6 col-md-4 {% if forloop.index == 3 %} d-none d-md-block {% endif %}">
+            <img src="{{img | absolute_url}}" class="w-100">
         </div>
         {% endfor %}
     </div>
-    <div class="row">
+    <div class="row pb-2">
         <div class="mx-auto">
             <a class="btn btn-primary btn-xl" href="portfolio">
-                Portofolio
+                Portfolio
             </a>
         </div>
     </div>
@@ -41,15 +40,15 @@ layout: default
 
 <!-- Review -->
 {% if page.review_text %}
-<div class="container">
-    <div class="row justify-content-center align-items-center" style="padding-top:20px; padding-bottom:20px">
-        <div class="col-md-6 ml-auto bg-faded-secondary rounded p-3 mb-2 overlap-right">
+<div class="container pt-3">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 ml-auto bg-faded-secondary rounded p-3 mb-2 overlap-right">
             <h3>{{page.review_title}}</h3>
             <p>
                 {{page.review_text}}
             </p>
         </div>
-        <div class="col-md-6 p-0" style="padding-bottom:10px">
+        <div class="col-lg-6 p-0 overlap-left">
             <img src="{{page.review_img | absolute_url}}"
                  alt="Persoonlijke christelijke bruidsfotograaf" class="w-100">
         </div>

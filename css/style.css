@@ -1822,8 +1822,13 @@ a {
 
     .overlap-right {
         position: relative;
-        left:15%;
+        left:7%;
         z-index: 1
+    }
+
+    .overlap-left {
+        position: relative;
+        right: 7%
     }
 }
 
